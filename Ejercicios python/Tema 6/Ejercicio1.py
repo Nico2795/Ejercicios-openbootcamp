@@ -14,5 +14,5 @@ class Coche(Vehiculo):
 
         print(Color, Ruedas, Puertas,Velocidad,Cilindrada)
 
-c=Vehiculo("rojo",4,4)
+c=Coche("rojo",4,4,100,150)
 
