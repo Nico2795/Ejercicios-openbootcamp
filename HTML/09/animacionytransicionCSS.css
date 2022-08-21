@@ -1,0 +1,55 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-modern{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.4s , color 0.4s;
+    position: relative;
+}
+
+.btn-modern:hover{
+    transform: translateY(-5px);
+    border-bottom: 2px solid rgb(1, 1, 50);
+    background-color: blueviolet;
+    color: beige;
+}
+
+.tooltip{
+    position: absolute;
+    top: -60px;
+    background-color: gray;
+    color:white;
+    left: 100%;
+    transform: translateX(-80%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.btn-modern:hover .tooltip{
+    opacity: 1;
+}
+
+
+
+.tooltip::before {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: grey;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    transform: translateX(-40px);
+}
