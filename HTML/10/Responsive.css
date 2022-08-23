@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+.principal {
+    display: flex;
+    flex-grow: 1;
+}
+
+@media (min-width: 640px){
+    .contenedor{
+        flex-direction: column-reverse;
+    }
+
+    .vertical{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
